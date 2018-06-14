@@ -1,11 +1,49 @@
 @import "~bulma/sass/utilities/initial-variables"
+//@import "~bulma/sass/utilities/derived-variables"
 
 // Config vars
-$kaldi-red: #FD461E
-$kaldi-red-invert: #fff
+$mywell-blue1: #008FCC
+$mywell-blue1-invert: #FFFFFF
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+// 4. Setup your Custom Colors
+$mywell-grey1: #333333
+$mywell-red1: #F04939
+$mywell-orange1: #FF7733
+$mywell-yellow1: #FFAA33
+$mywell-green1: #00CC66
+$mywell-indigo1: #7A33FF
+$mywell-violet1: #CC0074
+
+//Redefine the global vars
+$primary: $mywell-blue1
+$primary-invert: $mywell-blue1-invert
+$family-serif: "Gilroy Sans", "Arial", sans-serif
+
+
+$danger: $mywell-red1
+// Use the new serif family
+$family-primary: $family-serif
+
+// Override defaults here
+$navbar-item-img-max-height: 3.5rem
+
+// Social Colors
+// $linkedin: #0077b5
+// $linkedin-invert: findColorInvert($linkedin)
+// $twitter: #55acee
+// $twitter-invert: findColorInvert($twitter)
+// $github: #333
+// $github-invert: findColorInvert($github)
+
+
+// 5. Add new color variables to the color map.
+// $addColors: (
+//   "mywell-grey1":($mywell-grey1,$mywell-grey1-invert),
+//   "twitter":($twitter, $twitter-invert),
+//   "linkedin": ($linkedin, $linkedin-invert),
+//   "github": ($github, $github-invert)
+// )
+// $colors: map-merge($colors, $addColors)
 
 .content .taglist
   list-style: none
