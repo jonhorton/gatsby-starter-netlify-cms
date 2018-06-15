@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import logo from '../img/logo.png'
+import logo from '../img/logo-white.png'
 import { Toggle } from 'react-powerplug'
 
 const Navbar = () => (
@@ -31,15 +31,15 @@ const Navbar = () => (
           <Link className="navbar-link" to="/solutions">
             Solutions
           </Link>
-            <div className="navbar-dropdown">
-              <Link className="navbar-item" to="/solutions">
+            <div className="navbar-dropdown is-boxed">
+              <Link className="dropdown-item" to="/solutions">
                 Overview
               </Link>
               <hr className="navbar-divider" />
-              <Link className="navbar-item" to="/solutions">
+              <Link className="dropdown-item" to="/solutions">
                 Payment Processing
               </Link>
-              <Link className="navbar-item" to="/solutions">
+              <Link className="dropdown-item" to="/solutions">
                 Giving Platform
               </Link>
             </div>
@@ -61,21 +61,21 @@ const Navbar = () => (
           <Link className="navbar-link" to="/solutions">
             Sign In
           </Link>
-            <div className="navbar-dropdown">
-              <Link className="navbar-item" to="/solutions">
+            <div className="navbar-dropdown is-boxed">
+              <Link className="dropdown-item" to="/solutions">
                 Giving Platform
               </Link>
               <hr className="navbar-divider" />
-              <Link className="navbar-item" to="/">
+              <Link className="dropdown-item" to="/">
                 Transnational Gateway
               </Link>
-              <Link className="navbar-item" to="/">
+              <Link className="dropdown-item" to="/">
                 Merchant Portal
               </Link>
             </div>
           </div>
           <div className="navbar-item">
-              <Link className="button is-primary" to="/get-started">
+              <Link className="button is-primary-invert" to="/get-started">
                 <span>Get Started</span>
               </Link>
           </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
+import Header from '../components/Header'
 
 class TagRoute extends React.Component {
   render() {
@@ -20,6 +21,10 @@ class TagRoute extends React.Component {
     } tagged with “${tag}”`
 
     return (
+      <div>
+      <Header
+        title={title}
+        backgroundImage="../img/img.jpg"/>
       <section className="section">
         <Helmet title={`${tag} | ${title}`} />
         <div className="container content">
@@ -37,6 +42,7 @@ class TagRoute extends React.Component {
           </div>
         </div>
       </section>
+      </div>
     )
   }
 }

@@ -1,90 +1,36 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import logo from '../img/logo.png'
-import { Toggle } from 'react-powerplug'
+import Navbar from '../components/Navbar'
 
-const Header = () => (
-    <div
-      className='navbar'
-      style={{ }}
-    >
-      <div
-        style={{
-          width: 150,
-          display: 'inline-block',
-        }}
-      >
-        <a href="https://mywell.org">
-          <div
-            className='logo'
-            style={{
-              background: `url(${logo})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'contain',
-            }}
-          />
-        </a>
-      </div>
-      <Toggle initial={false}>
-        {({ on, off, toggle}) => (
-          <span>
-            <a href="#" id="mobileMenuIcon" onClick={toggle} className={on ? "menuHidden" : ""}>&#9776;</a>
-            <a href="#" id="mobileCloseIcon" onClick={toggle} className={off ? "menuHidden" : ""}>×</a>
-            <div
-              id='listContainer'
-              onClick={toggle} className={off ? "menuHidden" : ""}
-              style={{
-                }}
-              >
-              <ul
-                style={{
-                  textTransform: 'uppercase',
-                  letterSpacing: '2px',
-                }}
-              >
-                <li>
-                  <a
-                    href="https://mywell.org"
-                  >
-                    Our Story
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://mywell.org/facts-2"
-                  >
-                    Facts
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://mywell.org/benefits"
-                  >
-                    Benefits
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://mywell.org/faqs"
-                  >
-                    Faqs
-                  </a>
-                </li>
-                <li className="activeLine">
-                  <Link
-                    to="/"
-                    className="active"
-                  >
-                    Contact Us
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </span>
-      )}
-      </Toggle>
+const styles = {
+  background: "url('/assets/images/img.jpg')center center; background-size:cover"
+}
+
+const displaySubtitle = ({ title }) => (
+  <h2 className="subtitle">
+    {title ? `Hello ${title}` : 'Please sign in'}
+  </h2>
+);
+
+const Header = ({title,subtitle,ctaLink,ctaLabel,image}) => (
+  <section className="hero is-primary is-medium" style={{ backgroundImage: `url(${image})`, backgroundPosition: 'center center', backgroundSize: 'cover' }}>
+    <div className="hero-head">
+      <Navbar />
     </div>
-
+    <div className="hero-body">
+      <div className="container has-text-centered">
+        <h1 className="title">
+          {title}
+        </h1>
+        <h2 className="subtitle">
+          {subtitle ? <h2 className="subtitle">{subtitle}</h2> : <h2 className="subtitle">This is a subtitle</h2> }
+        </h2>
+        <Link className="button is-primary-invert" to="/get-started">
+          <span>Get Started</span>
+        </Link>
+      </div>
+    </div>
+  </section>
 )
 
 export default Header
