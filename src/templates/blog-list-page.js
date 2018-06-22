@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Header from '../components/Header'
 
-export default class IndexPage extends React.Component {
+export default class BlogListPage extends React.Component {
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
@@ -11,7 +11,8 @@ export default class IndexPage extends React.Component {
     return (
       <div>
         <Header
-          title='Free up resources to further your mission'
+          title='Blog'
+          subtitle='Stay up to date on resources and relevant information that intersect with giving, technology, and faith based nonprofits.'
           image=''/>
 
         <section className="section">
@@ -50,7 +51,7 @@ export default class IndexPage extends React.Component {
   }
 }
 
-IndexPage.propTypes = {
+BlogListPage.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -59,7 +60,7 @@ IndexPage.propTypes = {
 }
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query BlogListQuery {
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] },
       filter: { frontmatter: { templateKey: { eq: "blog-post" } }}

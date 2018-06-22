@@ -10,7 +10,7 @@ import GetStartedPagePreview from './preview-templates/AboutPagePreview'
 CMS.registerPreviewStyle('/styles.css')
 CMS.registerPreviewTemplate('about', AboutPagePreview)
 CMS.registerPreviewTemplate('solutions', SolutionsPagePreview)
-CMS.registerPreviewTemplate('blog', BlogPostPreview)
+CMS.registerPreviewTemplate('blog-post', BlogPostPreview)
 CMS.registerPreviewTemplate('pricing', PricingPagePreview)
 CMS.registerPreviewTemplate('contact', ContactPagePreview)
 CMS.registerPreviewTemplate('get-started', GetStartedPagePreview)
