@@ -5,6 +5,7 @@ import { PricingPageTemplate } from '../../templates/pricing-page'
 const PricingPagePreview = ({ entry, widgetFor }) => (
   <PricingPageTemplate
     title={entry.getIn(['data', 'title'])}
+    subtitle={entry.getIn(['data', 'subtitle'])}
     content={widgetFor('body')}
   />
 )

@@ -5,6 +5,7 @@ import { GetStartedPageTemplate } from '../../templates/get-started-page'
 const GetStartedPagePreview = ({ entry, widgetFor }) => (
   <GetStartedPageTemplate
     title={entry.getIn(['data', 'title'])}
+    subtitle={entry.getIn(['data', 'subtitle'])}
     content={widgetFor('body')}
   />
 )

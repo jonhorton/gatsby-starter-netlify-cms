@@ -16,6 +16,7 @@ const SolutionsPagePreview = ({ entry, getAsset }) => {
     <SolutionsPageTemplate
       image={entry.getIn(['data', 'image'])}
       title={entry.getIn(['data', 'title'])}
+      subtitle={entry.getIn(['data', 'subtitle'])}
       heading={entry.getIn(['data', 'heading'])}
       description={entry.getIn(['data', 'description'])}
       intro={{ blurbs }}

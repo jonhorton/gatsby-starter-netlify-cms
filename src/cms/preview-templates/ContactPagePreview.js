@@ -5,6 +5,7 @@ import { ContactPageTemplate } from '../../templates/contact-page'
 const ContactPagePreview = ({ entry, widgetFor }) => (
   <ContactPageTemplate
     title={entry.getIn(['data', 'title'])}
+    subtitle={entry.getIn(['data', 'subtitle'])}
     content={widgetFor('body')}
   />
 )

@@ -152,6 +152,7 @@ export const productPageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        subtitle
         image
         heading
         description
