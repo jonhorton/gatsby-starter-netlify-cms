@@ -1,9 +1,23 @@
 ---
 templateKey: about-page
-title: Hey Kyle!
+title: About My Well Ministry
+subtitle: We're a nonprofit on a mission to reduce credit card processing fees and inspire generosity so others can accomplish more.
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+### Who We Are
+My Well Ministry is a 501(c)3 nonprofit organization, registered in the state of Illinois
+that provides at cost credit card processing services to faith based nonprofits. We help
+organizations free up money previously spent on credit card processing fees so that it
+can be reinvested to further their mission.
+
+We were birthed out of TransNational Payments, our payment processing partner,
+when the CEO John Pitzaferro, heard Bill Hybels tell the story of a man who owned a
+well drilling business and felt compelled to use the success of his well drilling business
+to begin drilling wells in Africa for free.
+
+This story profoundly impacted John, and in that moment he had the realization:
+"My Well is payment processing." In 2009, John officially launched My Well Ministry.
+
+Keep reading for the full My Well story.
 
 ### Single origin
 Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.

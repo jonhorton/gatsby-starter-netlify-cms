@@ -10,7 +10,9 @@ export const AboutPageTemplate = ({ title, content, subtitle, contentComponent }
     <div>
       <Header
         title={title}
-        backgroundImage="../img/img.jpg"/>
+        backgroundImage="../img/img.jpg"
+        subtitle={subtitle}
+      />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
@@ -43,7 +45,7 @@ const AboutPage = ({ data }) => {
     <AboutPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
-      subtitle={post.frontmatter.title}
+      subtitle={post.frontmatter.subtitle}
       content={post.html}
     />
   )
@@ -61,6 +63,7 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+        subtitle
       }
     }
   }
