@@ -36,10 +36,10 @@ const Navbar = () => (
                 Overview
               </Link>
               <hr className="navbar-divider" />
-              <Link className="dropdown-item" to="/solutions">
+              <Link className="dropdown-item" to="/solutions/payment-processing">
                 Payment Processing
               </Link>
-              <Link className="dropdown-item" to="/solutions">
+              <Link className="dropdown-item" to="/solutions/giving-platform">
                 Giving Platform
               </Link>
             </div>
