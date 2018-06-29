@@ -4,10 +4,11 @@ title: About My Well Ministry
 subtitle: >-
   We're a nonprofit on a mission to reduce credit card processing fees and
   inspire generosity so others can accomplish more.
-cta:
-  link: '#who-we-are'
-  text: Keep Reading
-  type: primary
+list:
+  - ctaLink: '#who-we-are'
+    ctaText: Learn More
+    ctaType: Button
+    date: '2018-06-29'
 ---
 ### Who We Are
 My Well Ministry is a 501(c)3 nonprofit organization, registered in the state of Illinois
