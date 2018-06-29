@@ -53,8 +53,20 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: "CTA", name: "cta", widget: "list", fields: [{label: Text, name: text, widget: string}, {label: Link, name: link, widget: string}, {label: Type, name: type, widget: select, options: [{label: "Primary", value: "primary"},{label: "Text Link", value: "link"}]}]}
+          - label: "List"
+            name: "list"
+            widget: "list"
+            fields:
+              - {label: "String", name: "string", widget: "string"}
+              - {label: "Boolean", name: "boolean", widget: "boolean"}
+              - {label: "Text", name: "text", widget: "text"}
+              - {label: "Number", name: "number", widget: "number"}
+              - {label: "Markdown", name: "markdown", widget: "markdown"}
+              - {label: "Datetime", name: "datetime", widget: "datetime"}
+              - {label: "Date", name: "date", widget: "date"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "File", name: "file", widget: "file"}
+              - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/blog/index.md"
         label: "Blog"
