@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 
-export const PricingPageTemplate = ({ title, subtitle, content, contentComponent }) => {
+export const PricingPageTemplate = ({ title, subtitle, cta, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -11,7 +11,9 @@ export const PricingPageTemplate = ({ title, subtitle, content, contentComponent
       <Header
         title={title}
         subtitle={subtitle}
-        backgroundImage="../img/img.jpg"/>
+        cta={cta}
+        backgroundImage={image}
+      />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
@@ -45,6 +47,8 @@ const PricingPage = ({ data }) => {
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       subtitle={post.frontmatter.subtitle}
+      cta={post.frontmatter.cta}
+      image={post.frontmatter.image}
       content={post.html}
     />
   )
@@ -56,13 +60,19 @@ PricingPage.propTypes = {
 
 export default PricingPage
 
-export const aboutPageQuery = graphql`
+export const pricingPageQuery = graphql`
   query PricingPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
         subtitle
+        cta {
+          ctaText
+          ctaLink
+          ctaType
+        }
+        image
       }
     }
   }

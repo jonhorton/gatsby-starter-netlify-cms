@@ -12,7 +12,7 @@ const displaySubtitle = ({ title }) => (
   </h2>
 );
 
-const Header = ({title,subtitle,ctaLink,ctaLabel,image}) => (
+const Header = ({title,subtitle,cta,image}) => (
   <section className="hero is-primary is-medium" style={{ backgroundImage: `url(${image})`, backgroundPosition: 'center center', backgroundSize: 'cover' }}>
     <div className="hero-head">
       <Navbar />
@@ -25,9 +25,11 @@ const Header = ({title,subtitle,ctaLink,ctaLabel,image}) => (
         <h2 className="subtitle">
           {subtitle ? <h2 className="subtitle">{subtitle}</h2> : <h2 className="subtitle">This is a subtitle</h2> }
         </h2>
-        <Link className="button is-primary-invert" to="/get-started">
-          <span>Get Started</span>
-        </Link>
+        {cta.map(item => (
+          <Link className="button is-primary-invert" to="{item.ctaLink}">
+            <span>{item.ctaText}</span>
+          </Link>
+        ))}
       </div>
     </div>
   </section>
