@@ -3,13 +3,14 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 
-export const ContactPageTemplate = ({ title, content, contentComponent }) => {
+export const ContactPageTemplate = ({ title, content, subtitle, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
       <Header
         title={title}
+        subtitle={subtitle}
         backgroundImage="../img/img.jpg"/>
       <section className="section section--gradient">
         <div className="container">
@@ -31,6 +32,7 @@ export const ContactPageTemplate = ({ title, content, contentComponent }) => {
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -42,6 +44,7 @@ const ContactPage = ({ data }) => {
     <ContactPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
+      subtitle={post.frontmatter.subtitle}
       content={post.html}
     />
   )

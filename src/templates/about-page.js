@@ -10,8 +10,8 @@ export const AboutPageTemplate = ({ title, content, subtitle, contentComponent }
     <div>
       <Header
         title={title}
-        backgroundImage="../img/img.jpg"
         subtitle={subtitle}
+        backgroundImage="../img/img.jpg"
       />
       <section className="section section--gradient">
         <div className="container">

@@ -1,7 +1,8 @@
 ---
 templateKey: 'solutions-page'
 path: /solutions
-title: Our Solutions
+title: Take your giving to the next level.
+subtitle: Our flexible solutions will help you increase digital giving and save money on fees.
 image: /img/jumbotron.jpg
 heading: Our Solutions
 description: >-

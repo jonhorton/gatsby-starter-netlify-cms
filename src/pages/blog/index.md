@@ -2,6 +2,7 @@
 templateKey: 'blog-list-page'
 path: /blog
 title: Blog
+subtitle: Stay up to date on resources and relevant information that intersect with giving, technology, and faith based nonprofits.
 #Add subtitle
 ---
 ### Don't miss an update—Get new entries in your inbox!

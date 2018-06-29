@@ -8,6 +8,7 @@ import Header from '../components/Header'
 export const SolutionsPageTemplate = ({
   image,
   title,
+  subtitle,
   heading,
   description,
   intro,
@@ -19,6 +20,7 @@ export const SolutionsPageTemplate = ({
   <div>
   <Header
     title={title}
+    subtitle={subtitle}
     image={image}/>
   <section className="section section--gradient">
     <div className="container">
@@ -98,6 +100,7 @@ export const SolutionsPageTemplate = ({
 SolutionsPageTemplate.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
+  subtitle: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -126,6 +129,7 @@ const SolutionsPage = ({ data }) => {
     <SolutionsPageTemplate
       image={frontmatter.image}
       title={frontmatter.title}
+      subtitle={frontmatter.subtitle}
       heading={frontmatter.heading}
       description={frontmatter.description}
       intro={frontmatter.intro}

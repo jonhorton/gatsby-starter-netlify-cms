@@ -12,9 +12,8 @@ export default class BlogListPage extends React.Component {
       <div>
         <Header
           title='Blog'
-          subtitle='Stay up to date on resources and relevant information that intersect with giving, technology, and faith based nonprofits.'
+          subtitle=''
           image=''/>
-
         <section className="section">
           <div className="container">
             <div className="content">

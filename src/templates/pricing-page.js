@@ -3,13 +3,14 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 
-export const PricingPageTemplate = ({ title, content, contentComponent }) => {
+export const PricingPageTemplate = ({ title, subtitle, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
     <div>
       <Header
         title={title}
+        subtitle={subtitle}
         backgroundImage="../img/img.jpg"/>
       <section className="section section--gradient">
         <div className="container">
@@ -31,6 +32,7 @@ export const PricingPageTemplate = ({ title, content, contentComponent }) => {
 
 PricingPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
 }
@@ -42,6 +44,7 @@ const PricingPage = ({ data }) => {
     <PricingPageTemplate
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
+      subtitle={post.frontmatter.subtitle}
       content={post.html}
     />
   )
