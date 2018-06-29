@@ -53,12 +53,11 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - label: "CTA"
-            name: "cta"
+          - label: "List"
+            name: "list"
             widget: "list"
             fields:
-              - {label: "CTA Text", name: "ctaText", widget: "string"}
-              - {label: "CTA Link", name: "ctaLink", widget: "string"}
+              - {label: "String", name: "string", widget: "string"}
               - {label: "Boolean", name: "boolean", widget: "boolean"}
               - {label: "Text", name: "text", widget: "text"}
               - {label: "Number", name: "number", widget: "number"}
@@ -67,6 +66,7 @@ collections:
               - {label: "Date", name: "date", widget: "date"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "File", name: "file", widget: "file"}
+              - {label: "Select", name: "select", widget: "select", options: ["a", "b", "c"]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/blog/index.md"
         label: "Blog"
