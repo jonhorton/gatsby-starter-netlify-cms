@@ -1,9 +1,10 @@
 ---
-templateKey: 'solutions-page'
-path: /solutions
+templateKey: solutions-page
 title: Take your giving to the next level.
-subtitle: Our flexible solutions will help you increase digital giving and save money on fees.
-image: /img/jumbotron.jpg
+subtitle: >-
+  Our flexible solutions will help you increase digital giving and save money on
+  fees.
+image: /img/rawpixel-369788-unsplash.jpg
 heading: Our Solutions
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -100,3 +101,4 @@ pricing:
       plan: Custom
       price: '??'
 ---
+
