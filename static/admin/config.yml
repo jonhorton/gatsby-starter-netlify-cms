@@ -57,9 +57,9 @@ collections:
             name: "cta"
             widget: "list"
             fields:
-              - {label: "Text", name: "text", widget: "string"}
-              - {label: "Link", name: "link", widget: "string"}
-              - {label: "Type", name: "type", widget: "select", options: ["a", "b", "c"]}
+              - {label: "CTA Text", name: "ctaText", widget: "string"}
+              - {label: "CTA Link", name: "ctaLink", widget: "string"}
+              - {label: "CTA Type", name: "ctaType", widget: "select", options: ["a", "b", "c"]}
               - {label: "Boolean", name: "boolean", widget: "boolean"}
               - {label: "Text", name: "text", widget: "text"}
               - {label: "Number", name: "number", widget: "number"}
