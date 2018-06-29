@@ -53,8 +53,8 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - label: "List"
-            name: "list"
+          - label: "Call to Action"
+            name: "cta"
             widget: "list"
             fields:
               - {label: "CTA Text", name: "ctaText", widget: "string"}

@@ -8,7 +8,6 @@ list:
   - ctaLink: '#who-we-are'
     ctaText: Learn More
     ctaType: Button
-    date: '2018-06-29'
 ---
 ### Who We Are
 My Well Ministry is a 501(c)3 nonprofit organization, registered in the state of Illinois
