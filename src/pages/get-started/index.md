@@ -1,10 +1,14 @@
 ---
 templateKey: 'get-started-page'
 path: /get-started
-title: Get started today!
-subtitle: You’re on your way to saving money and furthering your mission. Choose the plan that best fits your organization’s needs, and we’ll take care of the details. 
+title: Get Started Today!
+subtitle: You’re on your way to saving money and furthering your mission. Choose the plan that best fits your organization’s needs, and we’ll take care of the details.
+list:
+  - ctaLink: '#the-plan'
+    ctaText: Start Saving
+    ctaType: Button
 ---
-### Signup
+## The Plan
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
 ### Single origin

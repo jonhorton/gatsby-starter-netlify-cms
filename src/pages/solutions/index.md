@@ -4,6 +4,13 @@ title: Take your giving to the next level.
 subtitle: >-
   Our flexible solutions will help you increase digital giving and save money on
   fees.
+list:
+  - ctaLink: '#who-we-are'
+    ctaText: Explore Options
+    ctaType: Button
+  - ctaLink: '/pricing'
+    ctaText: View Pricing
+    ctaType: Text Link
 image: /img/rawpixel-369788-unsplash.jpg
 heading: Our Solutions
 description: >-

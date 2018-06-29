@@ -30,6 +30,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "solutions-page"}
           - {label: "Title", name: title, widget: string}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - label: "Call to Action"
+            name: "cta"
+            widget: "list"
+            fields:
+              - {label: "CTA Text", name: "ctaText", widget: "string"}
+              - {label: "CTA Link", name: "ctaLink", widget: "string"}
+              - {label: "CTA Type", name: "ctaType", widget: "select", options: ["Button", "Text Link"]}
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
@@ -45,6 +52,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "pricing-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - label: "Call to Action"
+            name: "cta"
+            widget: "list"
+            fields:
+              - {label: "CTA Text", name: "ctaText", widget: "string"}
+              - {label: "CTA Link", name: "ctaLink", widget: "string"}
+              - {label: "CTA Type", name: "ctaType", widget: "select", options: ["Button", "Text Link"]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/about/index.md"
         label: "About"
@@ -53,21 +67,6 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - label: "Call to Action"
-            name: "cta"
-            widget: "list"
-            fields:
-              - {label: "CTA Text", name: "ctaText", widget: "string"}
-              - {label: "CTA Link", name: "ctaLink", widget: "string"}
-              - {label: "Boolean", name: "boolean", widget: "boolean"}
-              - {label: "Text", name: "text", widget: "text"}
-              - {label: "Number", name: "number", widget: "number"}
-              - {label: "Markdown", name: "markdown", widget: "markdown"}
-              - {label: "Datetime", name: "datetime", widget: "datetime"}
-              - {label: "Date", name: "date", widget: "date"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "File", name: "file", widget: "file"}
-              - {label: "CTA Type", name: "ctaType", widget: "select", options: ["Button", "Text Link"]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/blog/index.md"
         label: "Blog"
@@ -84,6 +83,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "get-started-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - label: "Call to Action"
+            name: "cta"
+            widget: "list"
+            fields:
+              - {label: "CTA Text", name: "ctaText", widget: "string"}
+              - {label: "CTA Link", name: "ctaLink", widget: "string"}
+              - {label: "CTA Type", name: "ctaType", widget: "select", options: ["Button", "Text Link"]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/contact/index.md"
         label: "Contact Us"
