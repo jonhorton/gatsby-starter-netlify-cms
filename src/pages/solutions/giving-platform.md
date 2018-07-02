@@ -2,15 +2,15 @@
 templateKey: solutions-page
 title: The only giving platform you'll need.
 subtitle: >-
-A complete giving platform that helps your organization increase giving while decreasing fees.
+  A complete giving platform that helps your organization increase giving while decreasing fees.
 cta:
   - ctaLink: '#features'
     ctaText: See the Difference
     ctaType: button
   - ctaLink: '/pricing'
     ctaText: View Pricing
-    ctaType: Text Link
-image: /img/rawpixel-369788-unsplash.jpg
+    ctaType: button is-outlined
+image: /img/carlos-muza-84523-unsplash.jpg
 heading: Features that make it easy for your people to give
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -21,13 +21,9 @@ intro:
   blurbs:
     - image: /img/coffee.png
       text: >
-      <strong>Merchant Account</strong>
-      We handle the behind the scenes payment processing
-      for Credit Cards and ACH transactions, while using
-      your existing Gateway provider. Give us some info,
-      we handle the details, you receive the savings!
-      <p>Learn More > </p>
-    - image: /img/coffee-gear.png
+        <strong>Merchant Account</strong>
+        We handle the behind the scenes payment processing for Credit Cards and ACH transactions, while using your existing Gateway provider. Give us some info, we handle the details, you receive the savings.
+    - image: /img/coffee.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
         tools for every taste and experience level. No matter if you roast your

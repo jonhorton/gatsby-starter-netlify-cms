@@ -2,15 +2,15 @@
 templateKey: solutions-page
 title: Credit & debit card processing for faith based nonprofits
 subtitle: >-
-Everything you need to process credit card, debit card, and e-check transactions without the crazy fees.
+  Everything you need to process credit card, debit card, and e-check transactions without the crazy fees.
 cta:
   - ctaLink: '#two-simple-options'
     ctaText: View Options
     ctaType: button
   - ctaLink: '/pricing'
     ctaText: View Pricing
-    ctaType: Text Link
-image: /img/rawpixel-369788-unsplash.jpg
+    ctaType: button is-outlined
+image: /img/banking-buy-computer-34577.jpg
 heading: Two Simple Options
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
@@ -21,12 +21,10 @@ intro:
   blurbs:
     - image: /img/coffee.png
       text: >
-      <strong>Merchant Account</strong>
-      We handle the behind the scenes payment processing
-      for Credit Cards and ACH transactions, while using
-      your existing Gateway provider. Give us some info,
-      we handle the details, you receive the savings!
-      <p>Learn More > </p>
+        We offer a small, but carefully curated selection of brewing gear and
+        tools for every taste and experience level. No matter if you roast your
+        own beans or just bought your first french press, you’ll find a gadget
+        to fall in love with in our shop.
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
