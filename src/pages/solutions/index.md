@@ -11,7 +11,7 @@ cta:
   - ctaLink: '/pricing'
     ctaText: View Pricing
     ctaType: button is-outlined
-image: /img/rawpixel-369788-unsplash.jpg
+image: /img/carlos-muza-84523-unsplash.jpg
 heading: Our Solutions
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their

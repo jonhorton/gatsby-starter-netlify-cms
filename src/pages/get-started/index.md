@@ -7,7 +7,7 @@ cta:
   - ctaLink: '#the-plan'
     ctaText: Start Saving
     ctaType: button
-image: /img/rawpixel-369788-unsplash.jpg
+image: /img/david-rodrigo-470187-unsplash.jpg
 ---
 ## The Plan
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.

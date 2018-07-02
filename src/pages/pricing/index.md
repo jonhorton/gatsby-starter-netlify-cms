@@ -7,7 +7,7 @@ cta:
   - ctaLink: '#merchant-account'
     ctaText: View Solutions
     ctaType: button
-image: /img/rawpixel-369788-unsplash.jpg
+image: /img/jimi-filipovski-189724-unsplash.jpg
 ---
 ### Hey Thierry!
 You're the best father in law!
