@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 
-export const ContactPageTemplate = ({ title, content, subtitle, contentComponent }) => {
+export const ContactPageTemplate = ({ title, content, subtitle, image, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -11,7 +11,8 @@ export const ContactPageTemplate = ({ title, content, subtitle, contentComponent
       <Header
         title={title}
         subtitle={subtitle}
-        backgroundImage="../img/img.jpg"/>
+        image={image}
+      />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
@@ -45,6 +46,7 @@ const ContactPage = ({ data }) => {
       contentComponent={HTMLContent}
       title={post.frontmatter.title}
       subtitle={post.frontmatter.subtitle}
+      image={post.frontmatter.image}
       content={post.html}
     />
   )
@@ -63,6 +65,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         subtitle
+        image
       }
     }
   }

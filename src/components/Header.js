@@ -18,9 +18,9 @@ const DisplayCta = ({cta}) => {
 	}
   return (
       cta.map(item => (
-        <Link className={item.ctaType + ' is-white is-invert'} to={item.ctaLink}>
-          <span>{item.ctaText} →</span>
-        </Link>
+          <Link className={item.ctaType + ' is-white is-invert'} to={item.ctaLink}>
+            <span>{item.ctaText} →</span>
+          </Link>
       ))
   )
 }
@@ -38,7 +38,9 @@ const Header = ({title,subtitle,cta,image}) => (
         <h2 className="subtitle">
           {subtitle ? <h2 className="subtitle">{subtitle}</h2> : <h2 className="subtitle">This is a subtitle</h2> }
         </h2>
-        <DisplayCta cta={cta}/>
+        <div className='buttons is-centered'>
+          <DisplayCta cta={cta}/>
+        </div>
       </div>
     </div>
   </section>

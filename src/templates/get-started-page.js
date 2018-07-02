@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
 
-export const GetStartedPageTemplate = ({ title, subtitle, cta, content, contentComponent }) => {
+export const GetStartedPageTemplate = ({ title, subtitle, cta, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
 
   return (
@@ -12,7 +12,8 @@ export const GetStartedPageTemplate = ({ title, subtitle, cta, content, contentC
         title={title}
         subtitle={subtitle}
         cta={cta}
-        backgroundImage="../img/img.jpg"/>
+        image={image}
+      />
       <section className="section section--gradient">
         <div className="container">
           <div className="columns">
@@ -47,6 +48,7 @@ const GetStartedPage = ({ data }) => {
       title={post.frontmatter.title}
       subtitle={post.frontmatter.subtitle}
       cta={post.frontmatter.cta}
+      image={post.frontmatter.image}
       content={post.html}
     />
   )
@@ -70,6 +72,7 @@ export const aboutPageQuery = graphql`
           ctaLink
           ctaType
         }
+        image
       }
     }
   }

@@ -12,7 +12,7 @@ export const PricingPageTemplate = ({ title, subtitle, cta, image, content, cont
         title={title}
         subtitle={subtitle}
         cta={cta}
-        backgroundImage={image}
+        image={image}
       />
       <section className="section section--gradient">
         <div className="container">

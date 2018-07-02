@@ -23,7 +23,8 @@ export const SolutionsPageTemplate = ({
     title={title}
     subtitle={subtitle}
     cta={cta}
-    image={image}/>
+    image={image}
+  />
   <section className="section section--gradient">
     <div className="container">
       <div className="section">
