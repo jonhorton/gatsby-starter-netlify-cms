@@ -13,6 +13,7 @@ export default class BlogListPage extends React.Component {
         <Header
           title='Blog'
           subtitle=''
+          cta=''
           image=''/>
         <section className="section">
           <div className="container">
@@ -74,6 +75,11 @@ export const pageQuery = graphql`
           frontmatter {
             title
             subtitle
+            cta {
+              ctaText
+              ctaLink
+              ctaType
+            }
             templateKey
             date(formatString: "MMMM DD, YYYY")
           }

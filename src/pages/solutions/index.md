@@ -10,7 +10,7 @@ cta:
     ctaType: button
   - ctaLink: '/pricing'
     ctaText: View Pricing
-    ctaType: Text Link
+    ctaType: button is-outlined
 image: /img/rawpixel-369788-unsplash.jpg
 heading: Our Solutions
 description: >-

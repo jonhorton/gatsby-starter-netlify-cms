@@ -14,16 +14,14 @@ const displaySubtitle = ({ title }) => (
 
 const DisplayCta = ({cta}) => {
 	if (!cta) {
-    console.log("no cta");
 		return null;
 	}
-  console.log("has cta");
   return (
-        cta.map(item => (
-          <Link className={item.ctaType + ' is-primary-invert'} to={item.ctaLink}>
-            <span>{item.ctaText}</span>
-          </Link>
-        ))
+      cta.map(item => (
+        <Link className={item.ctaType + ' is-white is-invert'} to={item.ctaLink}>
+          <span>{item.ctaText} →</span>
+        </Link>
+      ))
   )
 }
 
