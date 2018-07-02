@@ -9,6 +9,7 @@ export const SolutionsPageTemplate = ({
   image,
   title,
   subtitle,
+  cta,
   heading,
   description,
   intro,
@@ -21,6 +22,7 @@ export const SolutionsPageTemplate = ({
   <Header
     title={title}
     subtitle={subtitle}
+    cta={cta}
     image={image}/>
   <section className="section section--gradient">
     <div className="container">
@@ -130,6 +132,7 @@ const SolutionsPage = ({ data }) => {
       image={frontmatter.image}
       title={frontmatter.title}
       subtitle={frontmatter.subtitle}
+      cta={frontmatter.cta}
       heading={frontmatter.heading}
       description={frontmatter.description}
       intro={frontmatter.intro}
@@ -157,6 +160,11 @@ export const productPageQuery = graphql`
       frontmatter {
         title
         subtitle
+        cta {
+          ctaText
+          ctaLink
+          ctaType
+        }
         image
         heading
         description

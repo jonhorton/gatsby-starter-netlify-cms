@@ -3,10 +3,10 @@ templateKey: solutions-page
 title: The only giving platform you'll need.
 subtitle: >-
 A complete giving platform that helps your organization increase giving while decreasing fees.
-list:
+cta:
   - ctaLink: '#features'
     ctaText: See the Difference
-    ctaType: Button
+    ctaType: button
   - ctaLink: '/pricing'
     ctaText: View Pricing
     ctaType: Text Link

@@ -3,10 +3,10 @@ templateKey: 'get-started-page'
 path: /get-started
 title: Get Started Today!
 subtitle: You’re on your way to saving money and furthering your mission. Choose the plan that best fits your organization’s needs, and we’ll take care of the details.
-list:
+cta:
   - ctaLink: '#the-plan'
     ctaText: Start Saving
-    ctaType: Button
+    ctaType: button
 image: /img/rawpixel-369788-unsplash.jpg
 ---
 ## The Plan

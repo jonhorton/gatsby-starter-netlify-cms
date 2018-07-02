@@ -12,6 +12,21 @@ const displaySubtitle = ({ title }) => (
   </h2>
 );
 
+const DisplayCta = ({cta}) => {
+	if (!cta) {
+    console.log("no cta");
+		return null;
+	}
+  console.log("has cta");
+  return (
+        cta.map(item => (
+          <Link className={item.ctaType + ' is-primary-invert'} to={item.ctaLink}>
+            <span>{item.ctaText}</span>
+          </Link>
+        ))
+  )
+}
+
 const Header = ({title,subtitle,cta,image}) => (
   <section className="hero is-primary is-medium" style={{ backgroundImage: `url(${image})`, backgroundPosition: 'center center', backgroundSize: 'cover' }}>
     <div className="hero-head">
@@ -25,11 +40,7 @@ const Header = ({title,subtitle,cta,image}) => (
         <h2 className="subtitle">
           {subtitle ? <h2 className="subtitle">{subtitle}</h2> : <h2 className="subtitle">This is a subtitle</h2> }
         </h2>
-        {cta.map(item => (
-          <Link className="button is-primary-invert" to="{item.ctaLink}">
-            <span>{item.ctaText}</span>
-          </Link>
-        ))}
+        <DisplayCta cta={cta}/>
       </div>
     </div>
   </section>

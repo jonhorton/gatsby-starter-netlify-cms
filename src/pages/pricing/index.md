@@ -6,7 +6,7 @@ subtitle: No contracts. Month to Month. Cancel Anytime.
 cta:
   - ctaLink: '#merchant-account'
     ctaText: View Solutions
-    ctaType: Button
+    ctaType: button
 image: /img/rawpixel-369788-unsplash.jpg
 ---
 ### Hey Thierry!
