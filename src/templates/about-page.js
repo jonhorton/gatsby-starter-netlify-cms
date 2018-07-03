@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export const AboutPageTemplate = ({ title, content, subtitle, cta,image,contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -266,6 +267,7 @@ things that God is calling you to do. And it starts by having the courage to ans
 
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

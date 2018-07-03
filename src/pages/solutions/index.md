@@ -5,7 +5,7 @@ subtitle: >-
   Our flexible solutions will help you increase digital giving and save money on
   fees.
 cta:
-  - ctaLink: '#who-we-are'
+  - ctaLink: '#payment-processing'
     ctaText: Explore Options
     ctaType: button
   - ctaLink: '/pricing'

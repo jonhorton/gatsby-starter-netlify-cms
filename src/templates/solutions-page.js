@@ -4,6 +4,7 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export const SolutionsPageTemplate = ({
   image,
@@ -97,6 +98,7 @@ export const SolutionsPageTemplate = ({
       </div>
     </div>
   </section>
+  <Footer/>
   </div>
 )
 

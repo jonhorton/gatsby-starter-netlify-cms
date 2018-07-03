@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export const PricingPageTemplate = ({ title, subtitle, cta, image, content, contentComponent }) => {
   const PageContent = contentComponent || Content
@@ -28,6 +29,7 @@ export const PricingPageTemplate = ({ title, subtitle, cta, image, content, cont
           </div>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

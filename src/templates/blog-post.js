@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import Content, { HTMLContent } from '../components/Content'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export const BlogPostTemplate = ({
   content,
@@ -47,6 +48,7 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
+    <Footer/>
     </div>
   )
 }

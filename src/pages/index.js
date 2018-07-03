@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default class IndexPage extends React.Component {
   render() {
@@ -46,6 +47,7 @@ export default class IndexPage extends React.Component {
               ))}
           </div>
         </section>
+        <Footer/>
       </div>
     )
   }
