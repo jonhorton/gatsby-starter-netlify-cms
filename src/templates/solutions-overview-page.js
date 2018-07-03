@@ -47,7 +47,7 @@ export const SolutionsOverviewPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section is-primary section--gradient">
+    <section className="section has-background-light section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
