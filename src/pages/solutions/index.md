@@ -1,5 +1,5 @@
 ---
-templateKey: solutions-page
+templateKey: solutions-overview-page
 title: Take your giving to the next level.
 subtitle: >-
   Our flexible solutions will help you increase digital giving and save money on

@@ -15,7 +15,7 @@ export const AboutPageTemplate = ({ title, content, subtitle, cta,image,contentC
         image={image}
       />
       <section className="section section--gradient">
-        <div className="container">
+        <div className="container content">
           <div className="columns">
             <div className="column is-4">
               <div className="section">
