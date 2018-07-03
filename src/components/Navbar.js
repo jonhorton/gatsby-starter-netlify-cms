@@ -62,14 +62,14 @@ const Navbar = () => (
             Sign In
           </Link>
             <div className="navbar-dropdown is-boxed">
-              <Link className="dropdown-item" to="/solutions">
+              <Link className="dropdown-item" to="#">
                 Giving Platform
               </Link>
               <hr className="navbar-divider" />
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="#">
                 Transnational Gateway
               </Link>
-              <Link className="dropdown-item" to="/">
+              <Link className="dropdown-item" to="#">
                 Merchant Portal
               </Link>
             </div>
