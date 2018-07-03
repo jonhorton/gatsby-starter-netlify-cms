@@ -32,12 +32,10 @@ const Header = ({title,subtitle,cta,image}) => (
     </div>
     <div className="hero-body">
       <div className="container has-text-centered">
-        <h1 className="title">
+        <h1 className="title is-2">
           {title}
         </h1>
-        <h2 className="subtitle">
-          {subtitle ? <h2 className="subtitle">{subtitle}</h2> : <h2 className="subtitle">This is a subtitle</h2> }
-        </h2>
+        {subtitle ? <h2 className="subtitle is-4">{subtitle}</h2> : <h2 className="subtitle">This is a subtitle</h2> }
         <div className='buttons is-centered'>
           <DisplayCta cta={cta}/>
         </div>

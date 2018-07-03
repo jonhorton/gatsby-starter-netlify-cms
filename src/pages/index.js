@@ -12,6 +12,7 @@ export default class IndexPage extends React.Component {
       <div>
         <Header
           title='Free up resources to further your mission'
+          subtitle='At-cost credit card processing solutions for faith based nonprofits that help fund ministry.'
           image=''/>
 
         <section className="section">

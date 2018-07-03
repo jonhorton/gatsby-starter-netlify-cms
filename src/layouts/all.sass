@@ -19,7 +19,35 @@ $mywell-violet1: #CC0074
 $primary: $mywell-blue1
 $primary-invert: $mywell-blue1-invert
 $family-serif: "Gilroy-Regular", "Arial", sans-serif
+$body-size: 18px
+//$body-line-height: 1.333
+.body-bold
+  font-family: Gilroy-ExtraBold
+  font-style: normal
+  font-weight: normal
 
+$size-1: 4rem
+$size-2: 2.667rem
+$size-3: 2rem
+$size-4: 1.333rem
+
+h1,h2,h3,h4,.title
+  font-family: Gilroy-ExtraBold
+  font-style: normal
+  font-weight: normal
+h1.subtitle,h2.subtitle,h3.subtitle,h4.subtitle,.subtitle
+  font-family: Gilroy-Regular
+  font-style: normal
+  font-weight: normal
+
+h1
+  font-size: $size-1
+h2
+  font-size: $size-2
+h3
+  font-size: $size-3
+h4
+  font-size: $size-4
 
 $danger: $mywell-red1
 // Use the new serif family
@@ -60,10 +88,14 @@ $control-border-width: 1px !default
 
 
 // Additional config
+$button-padding-horizontal: .8889rem
+$button-padding-vertical: .7222rem
+
 .button
-  padding: 12px 16px 10px
-.button.is-large
-  padding: 13px 16px 11px
+  @extend .body-bold
+  padding: 13px 16px 11px !important
+// .button.is-large
+//   padding: 13px 16px 11px
 .button.is-small
   padding: 9px 8px
 
