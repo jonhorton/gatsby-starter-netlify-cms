@@ -33,7 +33,7 @@ export const AboutPageTemplate = ({ title, content, subtitle, cta,image,contentC
             <div className="column is-10 is-offset-1">
               <hr />
               <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">
+                <h2 className="title is-size-3 is-bold-light has-text-centered">
                   Our Story
                 </h2>
               </div>
@@ -41,7 +41,7 @@ export const AboutPageTemplate = ({ title, content, subtitle, cta,image,contentC
           </div>
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
+              <h3 className="title is-size-4 is-bold-light">
                 2005: Every Dollar Matters
               </h3>
             </div>
@@ -65,7 +65,7 @@ processing fees was taking away from money that could be used in ministry.
 
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
+              <h3 className="title is-size-4 is-bold-light">
                 2008–2009: My Well Ministry is born
               </h3>
             </div>
@@ -97,7 +97,7 @@ processing fees was taking away from money that could be used in ministry.
 
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
+              <h3 className="title is-size-4 is-bold-light">
                 2009–2017: Investing in Kingdom impact
               </h3>
             </div>
@@ -131,7 +131,7 @@ processing fees was taking away from money that could be used in ministry.
 
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
+              <h3 className="title is-size-4 is-bold-light">
                 2017: Payments, not profits
               </h3>
             </div>
@@ -157,7 +157,7 @@ our vision is not profit.
 
           <div className="columns">
             <div className="column is-10 is-offset-1">
-              <h3 className="title is-size-4 has-text-weight-bold is-bold-light">
+              <h3 className="title is-size-4 is-bold-light">
                 2018 and beyond: A grander vision
               </h3>
             </div>
@@ -189,7 +189,7 @@ you can subscribe here.
             <div className="column is-10 is-offset-1">
               <hr />
               <div className="section">
-                <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">
+                <h2 className="title is-size-3 is-bold-light has-text-centered">
                   How does it work?
                 </h2>
                 </div>
@@ -226,7 +226,7 @@ for ministry work.
               <div className="column is-10 is-offset-1">
                 <hr />
                 <div className="section">
-                  <h2 className="title is-size-3 has-text-weight-bold is-bold-light has-text-centered">
+                  <h2 className="title is-size-3 is-bold-light has-text-centered">
                     What&#39;s your well?
                   </h2>
                   </div>

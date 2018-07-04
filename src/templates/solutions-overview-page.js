@@ -33,7 +33,7 @@ export const SolutionsOverviewPageTemplate = ({
           <div className="columns">
             <div className="column is-8 is-offset-2">
               <div className="content">
-                <h2 id="payment-processing" className="has-text-weight-semibold is-size-3">
+                <h2 id="payment-processing" className="is-size-3">
                   Credit &amp; debit card processing for faith based nonprofits
                 </h2>
                 <p>Everything you need to process credit card and e-check (ACH) transactions without the crazy fees.
@@ -54,7 +54,7 @@ export const SolutionsOverviewPageTemplate = ({
           <div className="columns">
             <div className="column is-8 is-offset-2">
               <div className="content">
-                <h2 className="has-text-weight-semibold is-size-3">
+                <h2 className="is-size-3">
                   A complete, innovative giving platform
                 </h2>
                 <p>Use our secure giving platform to help your organization increase

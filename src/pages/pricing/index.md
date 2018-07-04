@@ -9,8 +9,11 @@ cta:
     ctaType: button
 image: /img/jimi-filipovski-189724-unsplash.jpg
 ---
-### Hey Thierry!
-You're the best father in law!
+## Merchant Account
+####Easy, no hassle switch
+We handle the behind the scenes payment processing
+for Credit Cards and ACH transactions, while using your existing Gateway provider.
+Give us some info, we handle the details, you receive the savings!
 
 ### Single origin
 Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
