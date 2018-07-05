@@ -8,7 +8,12 @@ import './all.sass'
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="My Well Ministry: Nonprofit credit card processing services" />
+    <Helmet
+      title="My Well Ministry: Nonprofit credit card processing services"
+      link={[
+          { rel: 'icon', type: 'image/png', href: '/favicon.ico' }
+      ]}
+    />
     <div>{children()}</div>
   </div>
 )
