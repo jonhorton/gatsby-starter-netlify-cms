@@ -1,5 +1,5 @@
 ---
-templateKey: solutions-page
+templateKey: solutions-platform-page
 title: The only giving platform you'll need.
 subtitle: >-
   A complete giving platform that helps your organization increase giving while decreasing fees.

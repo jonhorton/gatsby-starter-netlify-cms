@@ -1,5 +1,5 @@
 ---
-templateKey: solutions-page
+templateKey: solutions-processing-page
 title: Credit & debit card processing for faith based nonprofits
 subtitle: >-
   Everything you need to process credit card, debit card, and e-check transactions without the crazy fees.
