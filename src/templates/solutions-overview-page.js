@@ -39,7 +39,7 @@ export const SolutionsOverviewPageTemplate = ({
                 <p>Everything you need to process credit card and e-check (ACH) transactions without the crazy fees.
   Most organizations save up to 50%. Easily signup for a merchant account to use with your existing platform
   or add our gateway to save even more for your online processing!</p>
-                <Link className='button is-primary' to='solutions/payment-processing'>
+                <Link className='button is-primary' to='/solutions/payment-processing'>
                   <span>Learn More →</span>
                 </Link>
               </div>
@@ -48,7 +48,7 @@ export const SolutionsOverviewPageTemplate = ({
         </div>
       </div>
     </section>
-    <section className="section has-background-light section--gradient">
+    <section className="section has-background-light">
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -61,7 +61,7 @@ export const SolutionsOverviewPageTemplate = ({
 giving, leveraging the same at cost credit and debit card processing. Allow your members
 to easily give via their computer, mobile phone, or iOS/Android app, while integrating
 with your existing Church Management software.</p>
-                <Link className='button is-primary' to='solutions/payment-processing'>
+                <Link className='button is-primary' to='/solutions/payment-processing'>
                   <span>Learn More →</span>
                 </Link>
               </div>
