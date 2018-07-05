@@ -69,9 +69,6 @@ const Footer = ({title,subtitle}) => (
           </h4>
           <p>Get the latest news, updates, tips &amp; tricks delivered
           straight to your inbox!</p>
-          <form>
-            <input name="email" />
-          </form>
 
         </div>
       </div>

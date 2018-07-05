@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'My Well Ministry',
+    title: 'Gatsby + Netlify CMS Starter',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -31,24 +31,6 @@ module.exports = {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: "./src/favicon.png",
-        injectHTML: true,
-        icons: {
-          android: true,
-          appleIcon: true,
-          appleStartup: true,
-          coast: false,
-          favicons: true,
-          firefox: true,
-          twitter: false,
-          yandex: false,
-          windows: false
-        }
       },
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
