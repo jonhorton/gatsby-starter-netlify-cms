@@ -41,7 +41,7 @@ export const SolutionsProcessingPageTemplate = ({
         <div className="columns">
           <div className="column is-6">
             <div className="content">
-              <h3 className="is-size-4">
+              <h3 className="title is-size-4">
                 Merchant Account
               </h3>
               <p>
@@ -50,15 +50,15 @@ export const SolutionsProcessingPageTemplate = ({
                 your existing Gateway provider. Give us some info,
                 we handle the details, you receive the savings!
               </p>
-              <Link className='button is-small' to='#'>
-                <span>Learn More →</span>
+              <Link className='button is-small' to='#merchant-account-gateway'>
+                <span>Keep Reading →</span>
               </Link>
             </div>
           </div>
 
           <div className="column is-6">
             <div className="content">
-              <h3 className="is-size-4">
+              <h3 className="title is-size-4">
                 Merchant Account + Gateway
               </h3>
               <p>
@@ -67,8 +67,8 @@ scratch? This option is for you! Take advantage of our at
 cost processing along with our at cost gateway and get
 great reporting tools built in.
               </p>
-              <Link className='button is-small' to='#'>
-                <span>Learn More →</span>
+              <Link className='button is-small' to='#merchant-account-gateway'>
+                <span>Keep Reading →</span>
               </Link>
             </div>
           </div>
@@ -94,7 +94,7 @@ great reporting tools built in.
             <div className="card">
               <header className="card-header has-background-light">
                 <div className="card-content">
-                  <h3 className="title is-size-4">
+                  <h3 id="merchant-account" className="title is-size-4">
                     Merchant Account
                   </h3>
                 </div>
@@ -118,12 +118,12 @@ great reporting tools built in.
 
           <div className="column is-5">
             <div className="card">
-              <header className="card-header has-background-light">
+              <header className="card-header has-background-link">
                 <div className="card-content">
-                  <h3 className="title is-size-4">
+                  <h3 id="merchant-account-gateway" className="title is-size-4 has-text-light">
                     Merchant Account + Gateway
                   </h3>
-                  <p className="subtitle is-size-6"><em>(Best option for the most savings!)</em></p>
+                  <p className="subtitle is-size-6 has-text-light"><em>(Best option for the most savings!)</em></p>
                 </div>
               </header>
               <div className="card-content content">
@@ -149,68 +149,229 @@ great reporting tools built in.
     <div className="container">
       <div className="section">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-8 is-offset-2">
             <div className="content">
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="is-size-2">
-                    {heading}
-                  </h3>
-                  <p>{description}</p>
-                </div>
-              </div>
-              <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-7">
-                  <h3 className="is-size-3">
-                    {main.heading}
-                  </h3>
-                  <p>{main.description}</p>
-                </div>
-              </div>
-              <div className="tile is-ancestor">
-                <div className="tile is-vertical">
-                  <div className="tile">
-                    <div className="tile is-parent is-vertical">
-                      <article className="tile is-child">
-                        <img
-                          style={{ borderRadius: '5px' }}
-                          src={main.image1.image}
-                          alt={main.image1.alt}
-                        />
-                      </article>
-                    </div>
-                    <div className="tile is-parent">
-                      <article className="tile is-child">
-                        <img
-                          style={{ borderRadius: '5px' }}
-                          src={main.image2.image}
-                          alt={main.image2.alt}
-                        />
-                      </article>
-                    </div>
-                  </div>
-                  <div className="tile is-parent">
-                    <article className="tile is-child">
-                      <img
-                        style={{ borderRadius: '5px' }}
-                        src={main.image3.image}
-                        alt={main.image3.alt}
-                      />
-                    </article>
-                  </div>
-                </div>
-              </div>
-              <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
-                style={{ backgroundImage: `url(${fullImage})` }}
-              />
               <h2 className="is-size-2">
-                {pricing.heading}
+                At Cost, Zero Markup = 100% Savings
               </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              <p>Our Interchange + 0% Pricing allows you to maximize savings for your organization.
+We will never profit from your processing fees!</p>
+              <Link className='button is-primary' to='/pricing'>
+                <span>Learn More →</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section className="section has-background-light">
+    <div className="container">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section has-text-centered">
+              <h2 className="title is-size-2 is-bold-light has-text-centered">
+                Integrations to help you work smarter
+              </h2>
+              <p>
+              Our credit card processing solutions can integrate with many existing
+software platforms, church managements systems, and payment gateways.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column is-5 is-offset-2">
+            <div className="content">
+              <h3 className="title is-size-4">
+                Supported Software &amp; Church Management Systems (ChMS)
+              </h3>
+                <ul>
+                  <li>Rock RMS</li>
+                  <li>Ministry Platform</li>
+                  <li>Fellowship One</li>
+                  <li>Touchpoint</li>
+                  <li>Txt2Give*</li>
+                  <li>SecureGive*</li>
+                  <li>Shelby Arena</li>
+                  <li>Brushfire Events*</li>
+                  <li>Wordpress*</li>
+                  <li>Wufoo*</li>
+                  <li>WebConnex*</li>
+                </ul>
+            </div>
+          </div>
+
+          <div className="column is-5">
+            <div className="content">
+              <h3 className="title is-size-4">
+                Supported Gateways
+              </h3>
+              <ul>
+                <li>Authorize.net</li>
+                <li>CyberSource (also used by F1)</li>
+                <li>Payflow Pro</li>
+                <li>NMI</li>
+                <li>Transnational Gateway</li>
+                <li>BeanStream</li>
+                <li>Vital</li>
+                <li>IATS</li>
+                <li>Sage (ACH)</li>
+                <li>PlugNPay (ACH)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section has-text-centered content">
+              <p>
+              Don’t see you platform listed? Check out our list of confirmed unsupported platforms,
+and if you don&#39;t see your platform listed, send us a message and we&#39;ll check for you!
+              </p>
+              <Link className='button is-primary' to='/get-started'>
+                <span>Get Started →</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section className="section ">
+    <div className="container">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section">
+              <h2 className="title is-size-2 is-bold-light has-text-centered">
+                Frequently Asked Questions
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column is-6">
+            <div className="content">
+              <h4 className="title is-size-4">
+                How much can I save?
+              </h4>
+              <p>
+              Over the last six years, My Well Ministry has helped hundreds
+of churches and faith based nonprofits free up over  $13,500,000 in
+processing fees to go back into ministry.  On average, organizations
+that use  My Well Ministry, save up to  50% (and some cases more)
+off their  current credit card  processing fees!
+              </p>
+
+              <h4 className="title is-size-4">
+                How long will the program last?
+              </h4>
+              <p>
+              Contracts under our My Well Ministry have no date commitments
+and do not carry any cancellation fees.  If there is ever reason for
+you to discontinue our services, there are no strings attached!
+              </p>
+
+              <h4 className="title is-size-4">
+                How does My Well Ministry offer these savings?
+              </h4>
+              <p>
+              My Well Ministry provides our processing services for less than
+our actual costs. This means any transactions and equipment
+needed, cost you less than it costs us to provide or buy.</p>
+
+              <p>Any fees TransNational or other payments companies typically
+access for profit are removed as part of this initiative. We’re able
+to save you money, allowing you to allocate funding to other areas
+of need within your ministry.
+              </p>
+
+              <h4 className="title is-size-4">
+              How can I see what I&#39;m currently paying
+in credit card processing fees?
+              </h4>
+              <p>
+              Contracts under our My Well Ministry have no date commitments
+and do not carry any cancellation fees.  If there is ever reason for
+you to discontinue our services, there are no strings attached!
+              </p>
+            </div>
+          </div>
+
+          <div className="column is-6">
+            <div className="content">
+              <h4 className="title is-size-4">
+                Does my organization qualify?
+              </h4>
+              <p>
+              If you are a religious institution and are a 501C3 organization,
+you qualify to partner with My Well Ministry.</p>
+
+<p>If you meet this criteria, get started today to start saving and
+accomplishing more with your giver&#39;s contributions.
+              </p>
+
+              <h4 className="title is-size-4">
+                Who is TransNational?
+              </h4>
+              <p>
+              TransNational Payments is our payment processing partner and
+industry leader in payment solutions and merchant services with
+over 16 years of serving businesses nationwide.</p>
+
+<p>They’re also recognized as being one of the most charitable and
+socially responsible companies in the industry. This is why in 2009,
+TransNational’s CEO and President launched My Well Ministry
+as a way to give back the company’s time and expertise in order
+to make its services available at less than cost to faith-based
+non-profit churches & ministries.
+              </p>
+
+              <h4 className="title is-size-4">
+                How is My Well funded?
+              </h4>
+              <p>
+              My Well is funded by the success of their partner, Transnational
+Payments. Rather than seeing churches and faith based based
+nonprofits as another vertical market to profit from, they leverage
+the success of their traditional business model to fund ministry.</p>
+
+<p>Additionally, as a registered 501(c)3 nonprofit ourselves, we accept
+donations from people and organizations who believe in our
+mission. As a result, we&#39;re able to play a small part in seeing
+God&#39;s kingdom come to earth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="section has-text-centered content">
+              <p>
+              Visit our Help Center for more advice and answers to
+common questions about us, our process, and your next step.
+              </p>
+              <Link className='button is-primary' to='https://help.mywell.org'>
+                <span>Visit the Help Center →</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section className="section has-background-primary">
+    <div className="container">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-8 is-offset-2">
+            <div className="content has-text-white">
+              <h2 className="is-size-2 has-text-white">
+                What will you accomplish with more?
+              </h2>
+              <p>Sign up today to start saving your organization money with our
+at cost credit & debit card processing.</p>
+              <Link className='button is-invert' to='/get-started'>
+                <span>Get Started →</span>
+              </Link>
             </div>
           </div>
         </div>
