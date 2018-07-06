@@ -13,6 +13,7 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  date,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
@@ -21,16 +22,15 @@ export const BlogPostTemplate = ({
     <div>
     <Header
       title={title}
-      backgroundImage="../img/img.jpg"/>
+      subtitle={description}
+      date={date}
+      backgroundImage="../img/img.jpg"
+    />
     <section className="section">
       {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -44,6 +44,26 @@ export const BlogPostTemplate = ({
                 </ul>
               </div>
             ) : null}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className="section has-background-primary">
+      <div className="container">
+        <div className="section">
+          <div className="columns">
+            <div className="column is-8 is-offset-2">
+              <div className="content has-text-white">
+                <h2 className="is-size-2 has-text-white">
+                  What will you accomplish with more?
+                </h2>
+                <p>Sign up today to start saving your organization money with our
+  at cost credit & debit card processing.</p>
+                <Link className='button is-invert' to='/get-started'>
+                  <span>Get Started →</span>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -73,6 +93,7 @@ const BlogPost = ({ data }) => {
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
       subtitle={post.frontmatter.subtitle}
+      date={post.frontmatter.date}
     />
   )
 }

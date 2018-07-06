@@ -25,7 +25,7 @@ const DisplayCta = ({cta}) => {
   )
 }
 
-const Header = ({title,subtitle,cta,image}) => (
+const Header = ({title,subtitle,date,cta,image}) => (
   <section className="hero is-primary is-medium" style={{ backgroundImage: `url(${image})`, backgroundPosition: 'center center', backgroundSize: 'cover' }}>
     <div className="hero-head">
       <Navbar />
@@ -37,7 +37,8 @@ const Header = ({title,subtitle,cta,image}) => (
             <h1 className="title is-2">
               {title}
             </h1>
-            {subtitle ? <h2 className="subtitle is-4">{subtitle}</h2> : <h2 className="subtitle">This is a subtitle</h2> }
+            {subtitle ? <h2 className="subtitle is-4">{subtitle}</h2> : null }
+            {date ? <p class="subtitle"><em>{date}</em></p> : null}
             <div className='buttons is-centered'>
               <DisplayCta cta={cta}/>
             </div>
