@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Navbar from '../components/Navbar'
+import HelpCenterSearch from '../components/HelpCenterSearch'
 
 const styles = {
   background: "url('/assets/images/img.jpg')center center; background-size:cover"
@@ -25,7 +26,7 @@ const DisplayCta = ({cta}) => {
   )
 }
 
-const Header = ({title,subtitle,date,cta,image}) => (
+const Header = ({title,subtitle,date,cta,helpcenter,image}) => (
   <section className="hero is-primary is-medium" style={{ backgroundImage: `url(${image})`, backgroundPosition: 'center center', backgroundSize: 'cover' }}>
     <div className="hero-head">
       <Navbar />
@@ -39,6 +40,7 @@ const Header = ({title,subtitle,date,cta,image}) => (
             </h1>
             {subtitle ? <h2 className="subtitle is-4">{subtitle}</h2> : null }
             {date ? <p class="subtitle"><em>{date}</em></p> : null}
+            {helpcenter ? <HelpCenterSearch/> : null}
             <div className='buttons is-centered'>
               <DisplayCta cta={cta}/>
             </div>
