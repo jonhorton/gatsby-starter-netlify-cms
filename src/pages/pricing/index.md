@@ -4,8 +4,8 @@ path: /pricing
 title: What will you accomplish with more?
 subtitle: No contracts. Month to Month. Cancel Anytime.
 cta:
-  - ctaLink: '#merchant-account'
-    ctaText: View Options
+  - ctaLink: '#options'
+    ctaText: View Pricing Options
     ctaType: button
 image: /img/jimi-filipovski-189724-unsplash.jpg
 ---

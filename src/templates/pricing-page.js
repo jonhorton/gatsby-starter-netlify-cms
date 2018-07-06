@@ -21,7 +21,7 @@ export const PricingPageTemplate = ({ title, subtitle, cta, image, content, cont
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="section">
-                  <h2 id="two-simple-options" className="title is-size-2 is-bold-light has-text-centered">
+                  <h2 id="options" className="title is-size-2 is-bold-light has-text-centered">
                     Pricing Options
                   </h2>
                   <p>
@@ -155,90 +155,65 @@ Take advantage of our at cost processing along with our at cost gateway and get 
                 </div>
               </div>
             </div>
+            <div className="columns">
+              <div className="column is-4 is-offset-4">
+                <div className="section">
+                  <h4 className="title is-size-4 is-bold-light has-text-centered">
+                    Additional Fees
+                  </h4>
+                  <ul>
+                    <li>$0 &ndash; Monthly Minimum Fee</li>
+                    <li>$0 &ndash; Account Setup Up Fee</li>
+                    <li>$0 &ndash; Annual Account Fee</li>
+                    <li>$0 &ndash; Account Termination Fee</li>
+                    <li>$0 &ndash; PCI/Security Fees<br/>
+                    <small>(If you complete certification through our partner TransNational, which we provide to you for no cost)</small></li>
+                  </ul>
+
+                  <p><strong>Chargebacks</strong></p>
+                  <ul>
+                    <li>$35: Credit Card</li>
+                    <li>$?: ACH</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
           </div>
+      </section>
+      <section className="section has-background-primary">
+        <div className="container">
+          <div className="section">
+            <div className="columns">
+              <div className="column is-8 is-offset-2">
+                <div className="content has-text-white">
+                  <h2 className="is-size-2 has-text-white">
+                    What will you accomplish with more?
+                  </h2>
+                  <p>Sign up today to start saving your organization money with our
+    at cost credit & debit card processing.</p>
+                  <Link className='button is-invert' to='/get-started'>
+                    <span>Get Started →</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section className="section">
         <div className="container">
           <div className="section">
             <div className="columns">
-              <div className="column is-10 is-offset-1">
+              <div className="column is-8 is-offset-2">
+                <div className="content">
                   <h2 className="is-size-2">
-                    Merchant Account
+                    Not a faith based nonprofit?
                   </h2>
-                  <p className="content">Easy, no hassle change.
-We handle the behind the scenes payment processing
-for Credit Cards and ACH transactions, while using your existing Gateway provider.
-Give us some info, we handle the details, you receive the savings!</p>
+                  <p>We also offer low cost options for other nonprofits and small to medium
+     sized businesses through our partner company Transnational Payments.</p>
+                  <a href="https://gotnpayments.com" className="button is-primary" target="_blank"><span>Learn More →</span></a>
                 </div>
-              </div>
-              <div className="columns">
-                <div className="column">
-                  <div className="card">
-                    <header className="card-header has-background-light">
-                      <div className="card-header-title">
-                        <h4 id="merchant-account" className="title is-size-5">
-                          Monthly Fees
-                        </h4>
-                      </div>
-                    </header>
-                    <div className="card-content">
-                      <ul>
-                        <li><strong>$7</strong> &ndash; Statement Fee</li>
-                        <li><strong>10¢</strong> &ndash; Batch Fee <br/><small>(2 per day on average)</small></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="column">
-                  <div className="card">
-                    <header className="card-header has-background-light">
-                      <div className="card-header-title">
-                        <h4 id="merchant-account" className="title is-size-5">
-                          Transaction Fees
-                        </h4>
-                      </div>
-                    </header>
-                    <div className="card-content content">
-
-                        <p><strong>1.5 Basis Points</strong> (.015%)<br/>
-                          <small>This equals out to $1.50 per $10,000 processed (covers a cost called Bin Clearance)</small></p>
-                        <p><strong>$.05 per transaction</strong> <br />
-                          <small>(covers TransNational&#39;s cost to process on the Global Network)</small></p>
-
-                    </div>
-                  </div>
-                </div>
-
-                <div className="column">
-                  <div className="card">
-                    <header className="card-header has-background-light">
-                      <div className="card-header-title">
-                        <h4 id="merchant-account" className="title is-size-5">
-                          Totals
-                        </h4>
-                      </div>
-                    </header>
-                    <div className="card-content">
-                        <p>Average effective rate per transaction is 1.75% + 5¢</p>
-                    </div>
-                    <footer class="card-footer">
-                    <Link className='has-background-primary has-text-white card-footer-item' to='#'>
-                      <span title="Get Started with a Merchant Account and Gateway option!">Choose Option →</span>
-                    </Link>
-                    </footer>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-      </section>
-      <section className="section section--gradient">
-        <div className="container">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="section">
-                <a id="merchant-account"></a>
-                <PageContent className="content" content={content} />
               </div>
             </div>
           </div>
