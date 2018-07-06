@@ -65,6 +65,26 @@ export default class BlogListPage extends React.Component {
             </div>
           </div>
         </section>
+        <section className="section has-background-primary">
+          <div className="container">
+            <div className="section">
+              <div className="columns">
+                <div className="column is-8 is-offset-2">
+                  <div className="content has-text-white">
+                    <h2 className="is-size-2 has-text-white">
+                      What will you accomplish with more?
+                    </h2>
+                    <p>Sign up today to start saving your organization money with our
+      at cost credit & debit card processing.</p>
+                    <Link className='button is-invert' to='/get-started'>
+                      <span>Get Started →</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <Footer/>
       </div>
     )
