@@ -1,5 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, Coffee } from '@fortawesome/free-brands-svg-icons'
 
 const styles = {
   background: "url('/assets/images/img.jpg')center center; background-size:cover"
@@ -77,8 +79,9 @@ const Footer = ({title,subtitle}) => (
       </div>
       <div className="columns">
         <div className="column has-text-white has-text-centered">
+
           <span class="icon is-medium has-background-white">
-            <i class="fas fa-info-circle"></i>
+            <FontAwesomeIcon icon="faFacebookSquare" />
           </span>&nbsp;
           <span class="icon is-medium has-background-white">
             <i class="fas fa-info-circle"></i>
