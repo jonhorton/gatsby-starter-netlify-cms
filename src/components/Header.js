@@ -41,9 +41,8 @@ const Header = ({title,subtitle,date,cta,helpcenter,image}) => (
             {subtitle ? <h2 className="subtitle is-4">{subtitle}</h2> : null }
             {date ? <p class="subtitle"><em>{date}</em></p> : null}
             {helpcenter ? <HelpCenterSearch/> : null}
-            <div className='buttons is-centered'>
-              <DisplayCta cta={cta}/>
-            </div>
+
+            <DisplayCta cta={cta}/>
           </div>
         </div>
       </div>
